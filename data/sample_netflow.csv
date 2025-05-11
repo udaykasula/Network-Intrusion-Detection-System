@@ -1,0 +1,9 @@
+duration,protocol,type,src_bytes,dst_bytes,flag,land,wrong_fragment,urgent,hot,failed_logins,logged_in,lnum_compromised,root_shell,su_attempted,root,history,duration_attack,label
+3,tcp,normal,200,1500,SF,0,0,0,0,0,1,0,0,0,0,0,0,normal
+10,tcp,attack,1000,2500,SF,0,0,0,0,1,0,1,0,0,0,1,0,attack
+5,udp,normal,400,100,SF,0,0,0,0,0,1,0,0,0,0,0,0,normal
+12,tcp,attack,500,2000,SF,0,0,0,0,0,1,0,0,0,1,0,0,attack
+7,tcp,normal,300,500,SF,0,0,0,0,0,1,0,0,0,0,0,0,normal
+8,udp,attack,700,1500,SF,0,0,0,0,1,0,1,0,0,0,1,0,attack
+15,tcp,normal,1500,3500,SF,0,0,0,0,0,1,0,0,0,0,0,0,normal
+4,tcp,attack,800,2200,SF,0,0,0,0,1,0,1,0,0,0,0,0,attack

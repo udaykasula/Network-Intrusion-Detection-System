@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f4f9, #eaeaea);
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50; /* Soft green */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideInDown 1s ease-out;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease-in;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Alerts Section */
+.alerts-container {
+    background: #f9f9f9;
+    border: 2px dashed #4CAF50; /* Soft green */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-style: italic;
+    animation: pulse 2s infinite;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f4f4f9;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    animation: fadeIn 2s ease-in;
+}
+
+/* Animations */
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        border-color: #4CAF50; /* Soft green */
+    }
+    50% {
+        transform: scale(1.05);
+        border-color: #8BC34A; /* Lighter green */
+    }
+    100% {
+        transform: scale(1);
+        border-color: #4CAF50; /* Soft green */
+    }
+}
